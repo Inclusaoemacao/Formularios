@@ -62,7 +62,7 @@ document.getElementById("sendFile").addEventListener("click", function() {
     // ✅ Exibir tela de carregamento antes de enviar
     document.getElementById("loading-overlay").style.display = "block";
 
-    const scriptURL = "https://script.google.com/macros/s/AKfycbxTwEXibXTkmOf9NmhLOlpYK09QETApiAhP3u2bt-BlqPQd3CK2cR2v_UQhykm09i1R/exec"; // Substitua pelo seu ID correto
+    const scriptURL = "https://script.google.com/macros/s/AKfycby-egzQvCVNjZk2ca9m-fOaXCeJi9GXqz_zV--GG02Uw8B4tHATPrBw9X3NS6q3W5fU/exec"; // Substitua pelo seu ID correto
 
     const formData = new FormData();
     formData.append("n_pedido", document.getElementById("n_pedido").value);
