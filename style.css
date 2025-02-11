@@ -1,0 +1,120 @@
+:root {
+    --gradient-start: #86FD8F;
+    --gradient-end: #FFF655;
+    --bg-transparent: rgba(255, 255, 255, 0.32);
+    --border-radius: 14px;
+    --main-color: rgb(64, 240, 26);
+    --gradient-black: #000000;
+}
+
+body {
+    background: linear-gradient(-45deg, var(--gradient-start), var(--gradient-end));
+    animation: gradient 15s ease infinite;
+    background-size: 600% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.img-box {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0 20px 20px 0;
+    object-fit: cover;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2rem; /* Usando rem para melhor responsividade */
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 20px;
+}
+
+.service-box {
+    flex: 1 1 200px; /* Flexível com um tamanho mínimo */
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid transparent;
+    transition: 0.5s ease;
+}
+
+.service-box:hover {
+    border-color: var(--gradient-black);
+    transform: scale(1.1);
+}
+
+.service-box i {
+    font-size: 5rem; /* Usando rem para melhor responsividade */
+    color: var(--main-color);
+}
+
+.container.mt-5 {
+    margin: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 5px;
+    font-size: 1.5rem; /* Usando rem para melhor responsividade */
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 1.5rem; /* Reduzindo o tamanho do título em telas menores */
+    }
+
+    .service-box i {
+        font-size: 4rem; /* Reduzindo o tamanho dos ícones em telas menores */
+    }
+
+    .service-box {
+        padding: 1.5rem; /* Reduzindo o padding em telas menores */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Reduzindo o tamanho do h2 em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.2rem; /* Reduzindo ainda mais o tamanho do título */
+    }
+
+    .service-box i {
+        font-size: 3rem; /* Reduzindo ainda mais o tamanho dos ícones */
+    }
+
+    .service-box {
+        padding: 1rem; /* Reduzindo ainda mais o padding */
+    }
+
+    h2 {
+        font-size: 1rem; /* Reduzindo ainda mais o tamanho do h2 */
+    }
+}
