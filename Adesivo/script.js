@@ -70,7 +70,7 @@ $(document).ready(function () {
         // ✅ Exibir tela de carregamento antes de enviar
         document.getElementById("loading-overlay").style.display = "block";
 
-        const scriptURL = "https://script.google.com/macros/s/AKfycbyNCvqFYIm0ZsENRjNsR89EVGxcD7NvH0WrMJXW5844_EdSLMHqvQUR37pwDs47VYIjNQ/exec"; // Substitua pelo seu ID correto
+        const scriptURL = "https://script.google.com/macros/s/AKfycbx8LPerdPYvKFggih6lKH1SbxW7x04RAXp-nomcFbhehKfrzvWEX9Onpba2cjylCWZFWg/exec"; // Substitua pelo seu ID correto
         const formData = new FormData();
 
         formData.append("n_pedido", document.getElementById("n_pedido").value);
