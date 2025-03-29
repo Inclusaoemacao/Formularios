@@ -204,7 +204,7 @@ function applyCIDMask(input) {
   });
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxCD-Cvp_cY8WDK2xGVDOuqZNH3AceCVIEIornVtfic-DYaLcW8vuUFNfTfRjkTXkve3g/exec'; // Substitua pela URL da sua Web App do Apps Script
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz-v56FoX_vV2CGbI7ql9yXndBimtxLF8IiNDWKskJ_EiEhXn1Kgwi1EDX4XxiSZo_Z/exec'; // Substitua pela URL da sua Web App do Apps Script
 
 document.getElementById("myForm").addEventListener("submit", function (event) {
   event.preventDefault(); // Impede o envio padrão do formulário
